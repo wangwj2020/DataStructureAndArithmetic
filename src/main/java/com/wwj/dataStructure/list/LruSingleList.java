@@ -12,14 +12,14 @@ import lombok.Data;
  * @Version: 1.0
  */
 @Data
-public class LruSingleLinked<T> {
+public class LruSingleList<T> {
     private Node<T> header;
 
     private int size = 0;
 
     private int capacity;
 
-    public LruSingleLinked(int capacity) {
+    public LruSingleList(int capacity) {
         this.capacity = capacity;
         header = new Node<>(null);
     }

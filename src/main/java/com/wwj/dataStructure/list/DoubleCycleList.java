@@ -11,12 +11,12 @@ import lombok.Data;
  * @Date: 2021/8/7 4:44
  * @Version: 1.0
  */
-public class DoubleCycleLinked<T> {
+public class DoubleCycleList<T> {
     private Node<T> header;
     private Node<T> tail;
     private int size;
 
-    public DoubleCycleLinked() {
+    public DoubleCycleList() {
         header = new Node<>();
         tail = new Node<>();
         header.next = tail;

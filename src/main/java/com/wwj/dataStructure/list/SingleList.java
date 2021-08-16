@@ -12,7 +12,7 @@ import lombok.Data;
  * @Version: 1.0
  */
 @Data
-public class SingleLinked<T> {
+public class SingleList<T> {
     private Node<T> header;
 
     private int size;

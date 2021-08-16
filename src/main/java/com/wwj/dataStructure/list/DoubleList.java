@@ -12,7 +12,7 @@ import lombok.Data;
  * @Version: 1.0
  */
 @Data
-public class DoubleLinked<T> {
+public class DoubleList<T> {
     private Node<T> header = new Node(null);
     private int size;
 

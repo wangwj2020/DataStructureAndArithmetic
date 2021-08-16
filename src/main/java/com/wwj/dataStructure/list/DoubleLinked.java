@@ -1,4 +1,4 @@
-package com.wwj.dataStructure.linked;
+package com.wwj.dataStructure.list;
 
 import lombok.Data;
 
@@ -7,14 +7,13 @@ import lombok.Data;
  * @Package: com.wwj.test.链表.单链表
  * @ClassName: DoubleLinked
  * @Author: ASUS
- * @Description: 单链表
+ * @Description: 双链表
  * @Date: 2021/8/6 16:54
  * @Version: 1.0
  */
 @Data
-public class SingleLinked<T> {
-    private Node<T> header;
-
+public class DoubleLinked<T> {
+    private Node<T> header = new Node(null);
     private int size;
 
     /**
@@ -23,16 +22,17 @@ public class SingleLinked<T> {
      * @param value 值
      */
     public void add(T value) {
-        if (header == null) {
-            header = new Node(value);
+        if (header.next == null) {
+            header.next = new Node(value);
         } else {
-            Node<T> next = header.getNext();
-            Node<T> pre = header;
+            Node<T> node = header;
+            Node<T> next = node.getNext();
             while (next != null) {
-                pre = next;
-                next = next.getNext();
+                node = next;
+                next = node.getNext();
             }
-            pre.next = new Node(value);
+            node.next = new Node(value);
+            node.next.pre = node;
         }
         size++;
     }
@@ -44,11 +44,9 @@ public class SingleLinked<T> {
      * @return val
      */
     public T get(int index) {
-        if (size - 1 < index) {
-            throw new IllegalArgumentException("out of bound");
-        }
+        checkIndex(index);
         Node<T> node = header;
-        for (int i = 0; i < index; i++) {
+        for (int i = 0; i <= index; i++) {
             node = node.next;
         }
         return node.value;
@@ -58,21 +56,28 @@ public class SingleLinked<T> {
      * 从链表中删除一个值
      *
      * @param index 所有
-     * @return 成功失败
      */
     public void remove(int index) {
-        if (size - 1 < index) {
-            throw new IllegalArgumentException("out of bound");
-        }
+        checkIndex(index);
 
-        Node<T> node = header;
-        Node<T> pre = null;
+        Node<T> node = header.next;
+        Node<T> pre = header;
+
         for (int i = 0; i < index; i++) {
             pre = node;
             node = node.next;
         }
         pre.next = node.getNext();
-        size--;
+        if (node.getNext() != null) {
+            node.getNext().pre = pre;
+        }
+
+    }
+
+    private void checkIndex(int index) {
+        if (size < index) {
+            throw new IllegalArgumentException("out of bound");
+        }
     }
 
     /**
@@ -81,7 +86,7 @@ public class SingleLinked<T> {
      * @return string
      */
     public String print() {
-        Node node = header;
+        Node<T> node = header.next;
         StringBuilder sb = new StringBuilder();
         while (node != null) {
             sb.append(node.getValue()).append(",");
@@ -91,8 +96,9 @@ public class SingleLinked<T> {
     }
 
     @Data
-    class Node<T> {
-        private Node next;
+    static class Node<T> {
+        private Node<T> next;
+        private Node<T> pre;
         private T value;
 
         public Node(T value) {

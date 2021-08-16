@@ -1,4 +1,4 @@
-package com.wwj.dataStructure.linked;
+package com.wwj.dataStructure.list;
 
 import lombok.Data;
 
@@ -7,13 +7,14 @@ import lombok.Data;
  * @Package: com.wwj.test.链表.单链表
  * @ClassName: DoubleLinked
  * @Author: ASUS
- * @Description: 双链表
+ * @Description: 单链表
  * @Date: 2021/8/6 16:54
  * @Version: 1.0
  */
 @Data
-public class DoubleLinked<T> {
-    private Node<T> header = new Node(null);
+public class SingleLinked<T> {
+    private Node<T> header;
+
     private int size;
 
     /**
@@ -22,17 +23,16 @@ public class DoubleLinked<T> {
      * @param value 值
      */
     public void add(T value) {
-        if (header.next == null) {
-            header.next = new Node(value);
+        if (header == null) {
+            header = new Node(value);
         } else {
-            Node<T> node = header;
-            Node<T> next = node.getNext();
+            Node<T> next = header.getNext();
+            Node<T> pre = header;
             while (next != null) {
-                node = next;
-                next = node.getNext();
+                pre = next;
+                next = next.getNext();
             }
-            node.next = new Node(value);
-            node.next.pre = node;
+            pre.next = new Node(value);
         }
         size++;
     }
@@ -44,9 +44,11 @@ public class DoubleLinked<T> {
      * @return val
      */
     public T get(int index) {
-        checkIndex(index);
+        if (size - 1 < index) {
+            throw new IllegalArgumentException("out of bound");
+        }
         Node<T> node = header;
-        for (int i = 0; i <= index; i++) {
+        for (int i = 0; i < index; i++) {
             node = node.next;
         }
         return node.value;
@@ -56,28 +58,21 @@ public class DoubleLinked<T> {
      * 从链表中删除一个值
      *
      * @param index 所有
+     * @return 成功失败
      */
     public void remove(int index) {
-        checkIndex(index);
+        if (size - 1 < index) {
+            throw new IllegalArgumentException("out of bound");
+        }
 
-        Node<T> node = header.next;
-        Node<T> pre = header;
-
+        Node<T> node = header;
+        Node<T> pre = null;
         for (int i = 0; i < index; i++) {
             pre = node;
             node = node.next;
         }
         pre.next = node.getNext();
-        if (node.getNext() != null) {
-            node.getNext().pre = pre;
-        }
-
-    }
-
-    private void checkIndex(int index) {
-        if (size < index) {
-            throw new IllegalArgumentException("out of bound");
-        }
+        size--;
     }
 
     /**
@@ -86,7 +81,7 @@ public class DoubleLinked<T> {
      * @return string
      */
     public String print() {
-        Node<T> node = header.next;
+        Node node = header;
         StringBuilder sb = new StringBuilder();
         while (node != null) {
             sb.append(node.getValue()).append(",");
@@ -96,9 +91,8 @@ public class DoubleLinked<T> {
     }
 
     @Data
-    static class Node<T> {
-        private Node<T> next;
-        private Node<T> pre;
+    class Node<T> {
+        private Node next;
         private T value;
 
         public Node(T value) {

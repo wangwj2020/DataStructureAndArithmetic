@@ -1,6 +1,6 @@
 package com.wwj.test.链表;
 
-import com.wwj.dataStructure.linked.DoubleLinked;
+import com.wwj.dataStructure.list.DoubleLinked;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

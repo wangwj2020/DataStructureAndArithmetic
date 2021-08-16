@@ -1,4 +1,4 @@
-package com.wwj.dataStructure.linked;
+package com.wwj.dataStructure.list;
 
 import lombok.Data;
 

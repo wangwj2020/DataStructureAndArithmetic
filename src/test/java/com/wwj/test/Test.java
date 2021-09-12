@@ -3,8 +3,10 @@ package com.wwj.test;
 import lombok.Builder;
 import lombok.Data;
 
+import java.util.Random;
+
 /**
- * @ProjectName: DataStructureAndArithmetic
+ * @ProjectName: DataStructureAndArithmeticn
  * @Package: com.wwj.test
  * @ClassName: Test
  * @Author: ASUS
@@ -16,25 +18,7 @@ import lombok.Data;
 @Builder(builderMethodName ="hiddenBuilder",buildMethodName = "myBuild")
 public class Test {
 
-    private String name;
-
-    private String like;
-
-    public static TestBuilder builder() {
-
-        return hiddenBuilder();
-    }
-
-    public Test init() {
-        this.like =get();
-        return this;
-    }
-
-    public String sayLike() {
-        return name+"  "+like;
-    }
-
-    String get() {
-        return "apple";
+    public static void main(String[] args) {
+        System.out.println(Math.random());
     }
 }

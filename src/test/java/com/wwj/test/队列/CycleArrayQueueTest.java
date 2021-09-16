@@ -1,6 +1,6 @@
 package com.wwj.test.队列;
 
-import com.wwj.dataStructure.queue.CycleArrayQueue;
+import com.wwj.dataStructure.line.queue.CycleArrayQueue;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

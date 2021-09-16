@@ -1,7 +1,6 @@
 package com.wwj.test.队列;
 
-import com.wwj.dataStructure.queue.LinkedQueue;
-import com.wwj.dataStructure.queue.LinkedQueue;
+import com.wwj.dataStructure.line.queue.LinkedQueue;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

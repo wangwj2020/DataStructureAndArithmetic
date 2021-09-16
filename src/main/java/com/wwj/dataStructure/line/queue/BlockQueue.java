@@ -1,8 +1,8 @@
-package com.wwj.dataStructure.queue;
+package com.wwj.dataStructure.line.queue;
 
 /**
  * @ProjectName: DataStructureAndArithmetic
- * @Package: com.wwj.dataStructure.queue
+ * @Package: com.wwj.dataStructure.line.queue
  * @ClassName: BlockQueue
  * @Author: ASUS
  * @Description: 阻塞队列

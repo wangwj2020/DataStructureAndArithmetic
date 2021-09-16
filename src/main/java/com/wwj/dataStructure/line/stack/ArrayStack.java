@@ -1,4 +1,4 @@
-package com.wwj.dataStructure.stack;
+package com.wwj.dataStructure.line.stack;
 
 /**
  * @ProjectName: DataStructureAndArithmetic

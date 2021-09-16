@@ -1,8 +1,6 @@
 package com.wwj.test.栈;
 
-import com.wwj.dataStructure.stack.BracketsMatch;
-import com.wwj.dataStructure.stack.Expression;
-import org.apache.commons.lang.StringUtils;
+import com.wwj.dataStructure.line.stack.BracketsMatch;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

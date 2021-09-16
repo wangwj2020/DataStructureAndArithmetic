@@ -1,8 +1,8 @@
-package com.wwj.dataStructure.queue;
+package com.wwj.dataStructure.line.queue;
 
 /**
  * @ProjectName: DataStructureAndArithmetic
- * @Package: com.wwj.dataStructure.queue
+ * @Package: com.wwj.dataStructure.line.queue
  * @ClassName: ArrayQueue
  * @Author: ASUS
  * @Description: 循环顺序队列

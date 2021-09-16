@@ -1,4 +1,4 @@
-package com.wwj.dataStructure.list;
+package com.wwj.dataStructure.line.list;
 
 import lombok.Data;
 

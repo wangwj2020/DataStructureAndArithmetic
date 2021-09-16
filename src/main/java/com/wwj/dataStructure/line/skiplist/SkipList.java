@@ -1,4 +1,4 @@
-package com.wwj.dataStructure.skiplist;
+package com.wwj.dataStructure.line.skiplist;
 
 import java.util.Random;
 

@@ -1,7 +1,6 @@
 package com.wwj.test.栈;
 
-import com.wwj.dataStructure.stack.ArrayStack;
-import org.junit.Assert;
+import com.wwj.dataStructure.line.stack.ArrayStack;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

@@ -1,10 +1,10 @@
-package com.wwj.dataStructure.stack;
+package com.wwj.dataStructure.line.stack;
 
 import org.apache.commons.lang.StringUtils;
 
 /**
  * @ProjectName: DataStructureAndArithmetic
- * @Package: com.wwj.dataStructure.stack
+ * @Package: com.wwj.dataStructure.line.stack
  * @ClassName: OperatorEnum2
  * @Author: ASUS
  * @Description: 运算符表达式

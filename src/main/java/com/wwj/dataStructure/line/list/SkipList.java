@@ -1,8 +1,8 @@
-package com.wwj.dataStructure.list;
+package com.wwj.dataStructure.line.list;
 
 /**
  * @ProjectName: DataStructureAndArithmetic
- * @Package: com.wwj.dataStructure.list
+ * @Package: com.wwj.dataStructure.line.list
  * @ClassName: SkipList
  * @Author: ASUS
  * @Description: 跳表

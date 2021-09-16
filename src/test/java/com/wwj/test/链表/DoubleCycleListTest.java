@@ -1,6 +1,6 @@
 package com.wwj.test.链表;
 
-import com.wwj.dataStructure.list.DoubleCycleList;
+import com.wwj.dataStructure.line.list.DoubleCycleList;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

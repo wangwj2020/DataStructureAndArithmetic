@@ -1,8 +1,8 @@
-package com.wwj.dataStructure.table;
+package com.wwj.dataStructure.line.table;
 
 /**
  * @ProjectName: DataStructureAndArithmetic
- * @Package: com.wwj.dataStructure.table
+ * @Package: com.wwj.dataStructure.line.table
  * @ClassName: HashTable
  * @Author: ASUS
  * @Description: 散列表

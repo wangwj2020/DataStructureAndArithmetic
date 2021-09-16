@@ -1,4 +1,4 @@
-package com.wwj.dataStructure.stack;
+package com.wwj.dataStructure.line.stack;
 
 import org.apache.commons.lang.StringUtils;
 
@@ -7,7 +7,7 @@ import java.util.Map;
 
 /**
  * @ProjectName: DataStructureAndArithmetic
- * @Package: com.wwj.dataStructure.stack
+ * @Package: com.wwj.dataStructure.line.stack
  * @ClassName: BracketsMatch
  * @Author: ASUS
  * @Description: 括号匹配

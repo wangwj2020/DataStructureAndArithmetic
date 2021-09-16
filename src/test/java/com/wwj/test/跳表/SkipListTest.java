@@ -1,6 +1,6 @@
 package com.wwj.test.跳表;
 
-import com.wwj.dataStructure.skiplist.SkipList;
+import com.wwj.dataStructure.line.skiplist.SkipList;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

@@ -1,7 +1,6 @@
-package com.wwj.test.二叉查找数;
+package com.wwj.test.树.二叉查找数;
 
 import com.wwj.dataStructure.tree.BinarySearchTree;
-import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

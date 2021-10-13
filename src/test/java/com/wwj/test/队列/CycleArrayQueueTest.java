@@ -1,9 +1,9 @@
 package com.wwj.test.队列;
 
 import com.wwj.dataStructure.line.queue.CycleArrayQueue;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * @ProjectName: DataStructureAndArithmetic

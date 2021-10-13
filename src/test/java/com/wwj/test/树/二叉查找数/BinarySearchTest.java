@@ -1,10 +1,10 @@
 package com.wwj.test.树.二叉查找数;
 
 import com.wwj.dataStructure.tree.BinarySearchTree;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 /**
  * auth sherry

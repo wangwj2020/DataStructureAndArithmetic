@@ -1,10 +1,10 @@
 package com.wwj.test.跳表;
 
 import com.wwj.dataStructure.line.skiplist.SkipList;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 public class SkipListTest {
 

@@ -19,6 +19,9 @@ public class Heap {
         count = 0;
     }
 
+    /**
+     * 时间复杂度：O(nlogn)
+     */
     public void sort() {
         //  2021/9/17 建堆
         buildHeap();
@@ -30,12 +33,9 @@ public class Heap {
         }
     }
 
-    private void buildHeap() {
-        for (int i = count / 2; i >= 1; i--) {
-            heapify(ints, count, i);
-        }
-    }
-
+    /**
+     * 时间复杂度：O(logn)
+     */
     public void insert(int val) {
         if (count >= capacity) {
             return;
@@ -50,12 +50,21 @@ public class Heap {
         }
     }
 
+    /**
+     * 时间复杂度：O(logn)
+     */
     public void removeMax() {
         if (count == 0) {
             return;
         }
         ints[1] = ints[count];
         heapify(ints, count, 1);
+    }
+
+    private void buildHeap() {
+        for (int i = count / 2; i >= 1; i--) {
+            heapify(ints, count, i);
+        }
     }
 
     private void heapify(int[] ints, int count, int i) {

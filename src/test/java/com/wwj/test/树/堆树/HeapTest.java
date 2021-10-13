@@ -1,8 +1,9 @@
 package com.wwj.test.树.堆树;
 
 import com.wwj.dataStructure.tree.Heap;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * auth sherry
@@ -25,6 +26,6 @@ public class HeapTest {
         heap.insert(7);
         heap.insert(2);
         heap.sort();
-        Assert.assertEquals("1,2,3,7,9,12,13,14,17,18,23,",heap.toString());
+        assertEquals("1,2,3,7,9,12,13,14,17,18,23,",heap.toString());
     }
 }

@@ -1,9 +1,10 @@
 package com.wwj.test.哈希表;
 
 import com.wwj.dataStructure.line.hashTable.HashTable;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 /**
  * auth sherry

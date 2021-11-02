@@ -20,7 +20,7 @@ public class MinDist2 {
         if (mem[row][column] > 0) {
             return mem[row][column];
         }
-        //上一个
+        //上一个·
         int upInt = Integer.MAX_VALUE;
         if (row - 1 >= 0) {
             upInt = minDisCal(row - 1, column);

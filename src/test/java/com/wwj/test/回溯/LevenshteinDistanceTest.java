@@ -1,6 +1,6 @@
 package com.wwj.test.回溯;
 
-import com.wwj.arithmetic.backtracking.LevenshteinDistance;
+import com.wwj.stage1.arithmetic.backtracking.LevenshteinDistance;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -1,6 +1,6 @@
 package com.wwj.test.树.二叉查找数;
 
-import com.wwj.dataStructure.tree.BinarySearchTree;
+import com.wwj.stage1.dataStructure.tree.BinarySearchTree;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

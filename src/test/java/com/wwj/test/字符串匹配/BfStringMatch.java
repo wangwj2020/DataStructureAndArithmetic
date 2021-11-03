@@ -1,6 +1,6 @@
 package com.wwj.test.字符串匹配;
 
-import com.wwj.arithmetic.stringMatch.BF;
+import com.wwj.stage1.arithmetic.stringMatch.BF;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

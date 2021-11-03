@@ -1,6 +1,6 @@
 package com.wwj.test.链表;
 
-import com.wwj.dataStructure.line.list.LruSingleList;
+import com.wwj.stage1.dataStructure.line.list.LruSingleList;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

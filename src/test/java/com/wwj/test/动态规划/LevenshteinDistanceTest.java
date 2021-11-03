@@ -1,6 +1,6 @@
 package com.wwj.test.动态规划;
 
-import com.wwj.arithmetic.dynamicProgramming.LevenshteinDistance;
+import com.wwj.stage1.arithmetic.dynamicProgramming.LevenshteinDistance;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -1,6 +1,6 @@
 package com.wwj.test.树.堆树;
 
-import com.wwj.dataStructure.tree.MinHeap;
+import com.wwj.stage1.dataStructure.tree.MinHeap;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

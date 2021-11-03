@@ -1,6 +1,6 @@
 package com.wwj.test.动态规划;
 
-import com.wwj.arithmetic.dynamicProgramming.MinDist;
+import com.wwj.stage1.arithmetic.dynamicProgramming.MinDist;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

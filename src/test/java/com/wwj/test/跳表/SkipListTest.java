@@ -1,6 +1,6 @@
 package com.wwj.test.跳表;
 
-import com.wwj.dataStructure.line.skiplist.SkipList;
+import com.wwj.stage1.dataStructure.line.skiplist.SkipList;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -1,6 +1,6 @@
 package com.wwj.test.回溯;
 
-import com.wwj.arithmetic.backtracking.EightQueens;
+import com.wwj.stage1.arithmetic.backtracking.EightQueens;
 import org.junit.jupiter.api.Test;
 
 /**

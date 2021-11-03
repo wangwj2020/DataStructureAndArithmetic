@@ -1,6 +1,6 @@
 package com.wwj.test.队列;
 
-import com.wwj.dataStructure.line.queue.CycleArrayQueue;
+import com.wwj.stage1.dataStructure.line.queue.CycleArrayQueue;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

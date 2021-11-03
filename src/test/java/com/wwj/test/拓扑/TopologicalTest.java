@@ -1,6 +1,6 @@
 package com.wwj.test.拓扑;
 
-import com.wwj.dataStructure.graph.Topological;
+import com.wwj.stage1.dataStructure.graph.Topological;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

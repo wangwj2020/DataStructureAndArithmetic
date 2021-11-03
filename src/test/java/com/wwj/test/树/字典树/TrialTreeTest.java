@@ -1,6 +1,6 @@
 package com.wwj.test.树.字典树;
 
-import com.wwj.dataStructure.tree.TrialTree;
+import com.wwj.stage1.dataStructure.tree.TrialTree;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;

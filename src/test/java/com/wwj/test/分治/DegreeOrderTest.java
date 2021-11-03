@@ -1,7 +1,7 @@
 package com.wwj.test.分治;
 
-import com.wwj.arithmetic.reduce.DegreeOrder;
-import com.wwj.arithmetic.reduce.DegreeOrder2;
+import com.wwj.stage1.arithmetic.reduce.DegreeOrder;
+import com.wwj.stage1.arithmetic.reduce.DegreeOrder2;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

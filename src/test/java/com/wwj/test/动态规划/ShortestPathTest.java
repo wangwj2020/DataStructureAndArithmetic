@@ -1,7 +1,7 @@
 package com.wwj.test.动态规划;
 
-import com.wwj.arithmetic.backtracking.ShortestPath;
-import com.wwj.arithmetic.dynamicProgramming.shortestPath.ShortestPath2;
+import com.wwj.stage1.arithmetic.backtracking.ShortestPath;
+import com.wwj.stage1.arithmetic.dynamicProgramming.shortestPath.ShortestPath2;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

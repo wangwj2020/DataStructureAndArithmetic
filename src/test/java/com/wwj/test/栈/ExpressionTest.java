@@ -1,6 +1,6 @@
 package com.wwj.test.栈;
 
-import com.wwj.dataStructure.line.stack.Expression;
+import com.wwj.stage1.dataStructure.line.stack.Expression;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

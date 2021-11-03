@@ -1,6 +1,6 @@
 package com.wwj.test.哈希表;
 
-import com.wwj.dataStructure.line.hashTable.HashTable;
+import com.wwj.stage1.dataStructure.line.hashTable.HashTable;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

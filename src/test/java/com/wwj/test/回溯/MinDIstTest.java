@@ -1,6 +1,6 @@
 package com.wwj.test.回溯;
 
-import com.wwj.arithmetic.backtracking.MinDIst;
+import com.wwj.stage1.arithmetic.backtracking.MinDIst;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

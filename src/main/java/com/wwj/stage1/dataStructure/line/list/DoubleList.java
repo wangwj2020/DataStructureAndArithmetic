@@ -4,7 +4,7 @@ import lombok.Data;
 
 /**
  * @ProjectName: DataStructureAndArithmetic
- * @Package: com.wwj.test.链表.单链表
+ * @Package: com.wwj.stage1.test.链表.单链表
  * @ClassName: DoubleLinked
  * @Author: ASUS
  * @Description: 双链表

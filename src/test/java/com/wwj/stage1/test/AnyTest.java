@@ -8,17 +8,8 @@ public class AnyTest {
 
     @Test
     public void test() throws Exception {
-        List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6);
-        Iterator<Integer> iterator = list.iterator();
-
-        while (iterator.hasNext()) {
-            System.out.println("while i is ->" + iterator.next());
-            for (int i = 3; i > 0; i--) {
-                if (i == 2) {
-                    return;
-                }
-            }
-
-        }
+        String regex ="^((19|2[0-9])[0-9]{2})-(0[1-9]|1[012])$";
+        String data = "2012-00";
+        System.out.println(data.matches(regex));
     }
 }

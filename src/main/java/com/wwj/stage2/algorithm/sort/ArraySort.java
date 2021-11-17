@@ -11,6 +11,7 @@ public class ArraySort {
      * O(n2)
      * 原地排序
      * 稳定排序
+     *
      * @param arr 数组
      * @param len 数组长度
      */
@@ -30,6 +31,7 @@ public class ArraySort {
      * O(n2)
      * 原地排序
      * 稳定排序
+     *
      * @param arr 数组
      * @param len 数组长度
      * @return 排序后数组
@@ -52,6 +54,7 @@ public class ArraySort {
      * O(n2)
      * 原地排序
      * 稳定排序
+     *
      * @param arr 数组
      * @param len 数组长度
      * @return 排序后的数组
@@ -75,12 +78,46 @@ public class ArraySort {
      * 归并排序
      * 非原地排序
      * 稳定排序
+     *
      * @param arr 数组
      * @param len 数组长度
      * @return 排序后的数组
      */
     public static int[] merger_sort(int[] arr, int len) {
         return sort(arr, 0, len - 1);
+    }
+
+    /**
+     * 快速排序
+     *
+     * @param arr 数组
+     * @param len 数组长度
+     * @return 排序后数组
+     */
+    public static int[] quick_sort(int[] arr, int len) {
+        sort2(arr, 0, len - 1);
+        return arr;
+    }
+
+    private static void sort2(int[] arr, int start, int end) {
+        if (start >= end) {
+            return;
+        }
+        int part = povidSort(arr, start, end);
+        System.out.println(part);
+        sort2(arr, start, part - 1);
+        sort2(arr, part + 1, end);
+    }
+
+    private static int povidSort(int[] arr, int start, int end) {
+        int part = end;
+        for (int i = start; i <= end; i++) {
+            if (i < part && arr[i] > arr[part] || i > part && arr[i] < arr[part]) {
+                swap(arr, i, part);
+                part = i;
+            }
+        }
+        return part;
     }
 
     private static int[] sort(int[] arr, int start, int end) {

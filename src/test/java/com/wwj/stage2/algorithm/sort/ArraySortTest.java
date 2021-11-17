@@ -42,6 +42,14 @@ class ArraySortTest {
         assertEquals("0,2,2,3,4,5,9,", arr2Str(ints));
     }
 
+    @Test
+    public void test_quick_sort() throws Exception {
+        int[] arr = {3, 2, 9, 2, 5, 4, 0};
+        int[] ints = ArraySort.quick_sort(arr, arr.length);
+        System.out.println(arr2Str(ints));
+        assertEquals("0,2,2,3,4,5,9,", arr2Str(ints));
+    }
+
 
     private String arr2Str(int[] arr) {
         StringBuilder sb = new StringBuilder();

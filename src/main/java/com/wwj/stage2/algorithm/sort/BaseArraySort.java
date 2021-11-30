@@ -4,7 +4,7 @@ package com.wwj.stage2.algorithm.sort;
  * auth sherry
  * data created in 2021/11/9 8:05 下午
  */
-public class ArraySort {
+public class BaseArraySort {
 
     /**
      * 冒泡排序
